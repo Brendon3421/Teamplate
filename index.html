@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="topnav">
+            <a href="">home</a>
+            <a href="">Sobre</a>
+            <a href="">Serviços</a>
+            <button class="login">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <div class="icon-close">
+                <ion-icon name="close-circle"></ion-icon>
+            </div>
+        </span>
+        <form action="">
+            <div class="form-box login">
+                <h2>login</h2>
+                <div class="input-box">
+                    <span class="icons"><ion-icon name="mail-unread"></ion-icon></span>
+                    <label for="mail">E-mail</label>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <div class="password">
+                        <span class="icons"><ion-icon name="lock"></ion-icon></span>
+                        <label for="senha">Password</label>
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="renember-forgot">
+                    <label for="">
+                        <input type="checkbox">Remember me
+                    </label>
+                    <a href="#">Forgot Passoword?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-registe">
+                    <p> <a href="#" class="register-link">Dont have an account?</a></p>
+                </div>
+            </div>
+        </form>
+<!-- register -->
+        <span class="icon-close">
+            <div class="icon-close">
+                <ion-icon name="close-circle"></ion-icon>
+            </div>
+        </span>
+        <form action="">
+            <div class="form-box register">
+                <h2>Register</h2>
+                <div class="input-box">
+                    <span class="icons"><ion-icon name="mail-unread"></ion-icon></span>
+                    <label for="mail">E-mail</label>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <div class="password">
+                        <span class="icons"><ion-icon name="lock"></ion-icon></span>
+                        <label for="senha">Password</label>
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="icons"><ion-icon name="call"></ion-icon></span>
+                    <label for="phone">Phone</label>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="renember-forgot">
+                    <label for="">
+                        <input type="checkbox">I accept the terms
+                    </label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-registe">
+                    <p> <a href="#" class="have-account">have an account</a></p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

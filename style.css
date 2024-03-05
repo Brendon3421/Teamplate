@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+    --text: 'Poppins', sans-serif;
+    --primary-color: #3b3f49;
+    --second-color: #020304;
+    --third-color: #390039;
+    --white: #fff;
+    --yellow: #9a8c29;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text);
+}
+
+
+h1 {
+    font-family: var(--text);
+    color: var(--third-color);
+    font-size: 2rem;
+    user-select: none;
+}
+
+span {
+    font-family: var(--text);
+    color: var(--primary-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Outras propriedades de estilo aqui, se necessário */
+}
+
+.topnav a {
+    position: relative;
+    font-size: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--text);
+    margin: 40px;
+}
+
+.topnav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.6rem;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.topnav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.topnav .login {
+    width: 11rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    outline: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--white);
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.topnav .login:hover {
+    background-color: var(--white);
+    color: var(--third-color);
+}
+
+.wrapper {
+    position: relative;
+    width: 24rem;
+    height: 30rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    cursor: pointer;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .form-box.login {
+    /* display: none; */
+}
+.wrapper .form-box.register{
+    position: relative;
+    transform:  translateX(400px);
+}
+
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    position: absolute;
+    top: -1rem;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: var(--second-color);
+    pointer-events: none;
+    transition: .5s;
+    margin-top: 10px;
+    pointer-events: none;
+}
+
+
+.input-box input {
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    padding-left: 30px;
+    font-size: 1rem;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    position: relative;
+    top: -40px;
+}
+
+.input-box .icons {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+
+.btn {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.btn:hover {
+    transition: .7s;
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+a {
+    font-family: var(--text);
+    font-size: 1em;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.login-registe {
+    display: flex;
+    align-items: center;
+}
+
+.login-registe p {
+    margin-right: 5px;
+    color: var(--white);
+}
